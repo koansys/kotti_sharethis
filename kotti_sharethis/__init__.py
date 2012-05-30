@@ -21,7 +21,7 @@ def render_widget_assets(context, request, name=''):
     return render('templates/widget_assests.pt', request)
 
 
-def render_profile_widget(context, request, name=''):
+def render_sharethis_widget(context, request, name=''):
     prefix = 'kotti_sharethis.sharethis_widget.'
     if name:
         prefix += name + '.'
@@ -33,7 +33,7 @@ def render_profile_widget(context, request, name=''):
 def include_sharethis_widget(config, where=RenderBelowContent):  # pragma: no cover
     config.add_static_view(name='static', path='kotti_jtweetanywhere:static')
     register(RenderInHead, None, render_widget_assets)
-    register(where, None, render_profile_widget)
+    register(where, None, render_sharethis_widget)
 
 
 def include_sharethis_widget_above(config):  # pragma: no cover
