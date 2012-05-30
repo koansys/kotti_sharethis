@@ -1,0 +1,7 @@
+<span class='st_sharethis' displayText='ShareThis' tal:condition="variables.get('sharethis', False)"></span>
+<span class='st_facebook' displayText='Facebook' tal:condition="variables.get('facebook', False)"></span>
+<span class='st_twitter' displayText='Tweet' tal:condition="variables.get('twitter', False)"></span>
+<span class='st_linkedin' displayText='LinkedIn' tal:condition="variables.get('linked', False)"></span>
+<span class='st_googleplus' displayText='Google +' tal:condition="variables.get('gplus', False)"></span>
+<span class='st_pinterest' displayText='Pinterest' tal:condition="variables.get('pinterest', False)"></span>
+<span class='st_email' displayText='Email' tal:condition="variables.get('email', False)"></span>
